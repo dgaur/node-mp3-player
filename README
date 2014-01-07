@@ -1,0 +1,20 @@
+
+This is a trivial little MP3 player for node.js.  I wrote it as part of a
+larger experiment with node.js.  It just reads audio files given on the
+command-line and plays them through your (default) speaker.
+
+Requires async, lame and speaker modules:
+    % npm install async
+    % npm install lame
+    % npm install speaker
+
+Depending on your audio back-end, you may also need ALSA headers.  On FC,
+you can fetch the appropriate headers with:
+    % yum install alsa-lib-devel
+
+Run with:
+    % node mp3-player.js /path/to/file.mp3
+
+Tested on FC15.  Elsewhere, YMMV.
+
+

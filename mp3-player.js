@@ -3,6 +3,9 @@
 //
 // Trivial little MP3 player for the CLI, for node.js
 //
+// Usage:
+//	% node mp3-player.js /path/to/file.mp3
+//
 
 var async	= require("async");
 var fs		= require("fs");
